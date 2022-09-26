@@ -1,0 +1,56 @@
+package Clases;
+import java.util.*;
+
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
+
+import java.sql.*;
+
+public class accion {
+	public static void mostrar( String cadena, DefaultTableModel model) throws SQLException {
+		
+		Connection con=conexion.Conector(); //Conecta
+		
+		Statement stmt=con.createStatement(); //
+		ResultSet rset= stmt.executeQuery(cadena); //El resultado se guarda en resulset
+		ResultSetMetaData rMD=rset.getMetaData();  //La clase ResultSetMetaData contiene toda la información sobre los campos de base de datos contenidos en el ResultSet
+		int ncol=rMD.getColumnCount();  //Número de columnas
+
+		//PONER ETIQUETAS(NOMBRE COLUMNAS)
+		// Se crea un array de etiquetas para rellenar
+		Object[] etiquetas = new Object[ncol];
+
+		// Se obtiene cada una de las etiquetas para cada columna
+		for (int i = 0; i < ncol; i++)
+		{
+			etiquetas[i] = rMD.getColumnLabel(i + 1);
+		}
+		model.setColumnIdentifiers(etiquetas);
+		
+		
+		///INTRODUCIR DATOS
+		String[] dato= new String[ncol]; //array de String
+		 while (rset.next()) { 
+			 for(int i=0; i<ncol;++i) {
+				// System.out.print(rset.getString(i));
+				 dato[i]=rset.getString(i+1);  //Meter en el array 
+			 }
+			 
+			 model.addRow(dato); //Añadir al modelo
+		 }
+		
+
+		
+		stmt.close();
+		
+	}
+	public static void insertar( String cadena) throws SQLException {
+		System.out.print(cadena);
+		Connection con=conexion.Conector(); //Conecta
+		
+		Statement stmt=con.createStatement(); //
+		stmt.executeUpdate(cadena); //Consulta que modifica el esquema
+		stmt.close();
+	}
+	
+}

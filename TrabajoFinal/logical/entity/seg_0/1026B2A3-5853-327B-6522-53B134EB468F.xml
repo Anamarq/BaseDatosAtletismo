@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1026B2A3-5853-327B-6522-53B134EB468F" name="FotoAtleta">
+<createdBy>anama</createdBy>
+<createdTime>2021-01-30 20:19:00 UTC</createdTime>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<engineerTo>
+<item key="0FFE7824-9426-1525-CE0C-B36A67428512" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Foto" id="22EC7472-3F94-9162-011D-E38116B9F7D3">
+<createdBy>anama</createdBy>
+<createdTime>2021-01-30 20:19:34 UTC</createdTime>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<engineerTo>
+<item key="0FFE7824-9426-1525-CE0C-B36A67428512" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre" id="27319DA3-DEC6-9390-68B8-E074CD629712">
+<createdBy>anama</createdBy>
+<createdTime>2021-01-30 20:19:51 UTC</createdTime>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<engineerTo>
+<item key="0FFE7824-9426-1525-CE0C-B36A67428512" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Licencia1" id="5F0B2C04-D3BF-AA25-512A-C172838F6C61">
+<createdBy>anama</createdBy>
+<createdTime>2021-02-03 12:56:13 UTC</createdTime>
+<generatorID>49D42BFA-AE67-D8D0-2B58-9B65EF0562B9</generatorID>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<engineerTo>
+<item key="0FFE7824-9426-1525-CE0C-B36A67428512" value="true"/>
+</engineerTo>
+<referedAttribute>2538D894-112D-DA55-36C6-938F56ED7920</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

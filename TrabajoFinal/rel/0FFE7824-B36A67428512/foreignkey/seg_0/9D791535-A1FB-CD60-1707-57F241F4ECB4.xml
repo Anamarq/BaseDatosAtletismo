@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9D791535-A1FB-CD60-1707-57F241F4ECB4" containerWithKeyObject="46609447-B4F0-CCB0-86DC-845DC0F99974" localFKIndex="0774D94F-D59E-7233-8692-C9E7DF4553E6" name="Participa_ATLETAS_FK">
+<createdBy>anama</createdBy>
+<createdTime>2021-01-24 19:04:50 UTC</createdTime>
+<generatorID>52E1CC8E-1C70-4EF4-E40D-70DA2B2D3300</generatorID>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<referredTableLongName>ATLETAS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>EE15C2B8-BA8A-372F-0F6A-7ADB7DDD78A4</referredTableID>
+<keyObject>C08CB2E3-FBC6-17BB-51AF-D10F0A8E1B67</keyObject>
+<referredKeyID>C08CB2E3-FBC6-17BB-51AF-D10F0A8E1B67</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Licencia</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

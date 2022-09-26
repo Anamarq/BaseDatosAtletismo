@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BDA3ED60-FB2E-BCB1-CFA4-6B5DC9CD33CB" name="Tiene">
+<createdBy>anama</createdBy>
+<createdTime>2021-02-06 14:38:15 UTC</createdTime>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COMPETICION_Descripcion" id="5587CA88-4A82-F194-EA24-D0C84F8A8965">
+<createdBy>anama</createdBy>
+<createdTime>2021-02-06 14:38:15 UTC</createdTime>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64 CHAR</dataTypeSize>
+<ownDataTypeParameters>64 CHAR,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C438E2AB-3C3A-E50B-3AF4-5133DA92AB1B" referredColumn="3C29D2EE-6886-1D83-F5C1-1D5CF5EDD410"/>
+</associations>
+</Column>
+<Column name="PRUEBAS_Prueba" id="5C44C35D-5476-E0D7-1FF8-12D17EDE97CE">
+<createdBy>anama</createdBy>
+<createdTime>2021-02-06 15:46:23 UTC</createdTime>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F0627EE3-FDBD-AB28-BE60-F3CACFAE05B6" referredColumn="03692863-A63A-7F9E-C306-9DA3A8FFF7D8"/>
+</associations>
+</Column>
+<Column name="Hora" id="20E36796-EFF9-8015-1225-D1661A66C8A4">
+<createdBy>anama</createdBy>
+<createdTime>2021-02-07 11:52:15 UTC</createdTime>
+<generatorID>E522F628-4DDC-B60D-69DF-BE365C497AE0</generatorID>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A5F49673-CB13-A7A0-9E00-B30F3D6A6755" name="Tiene_PK">
+<createdBy>anama</createdBy>
+<createdTime>2021-02-06 14:38:15 UTC</createdTime>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5587CA88-4A82-F194-EA24-D0C84F8A8965"/>
+<colUsage columnID="5C44C35D-5476-E0D7-1FF8-12D17EDE97CE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="493F6227-3845-7E34-049A-CC848CBD353A" name="Tiene_COMPETICION_FK">
+<createdBy>anama</createdBy>
+<createdTime>2021-02-06 14:38:15 UTC</createdTime>
+<generatorID>C461F6C0-5830-3336-5442-9D3EE86AD7B2</generatorID>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5587CA88-4A82-F194-EA24-D0C84F8A8965"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="16CBE22F-0476-DDE5-3081-BF259038991A" name="Tiene_PRUEBAS_FK">
+<createdBy>anama</createdBy>
+<createdTime>2021-02-06 14:38:15 UTC</createdTime>
+<generatorID>C461F6C0-5830-3336-5442-9D3EE86AD7B2</generatorID>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5C44C35D-5476-E0D7-1FF8-12D17EDE97CE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

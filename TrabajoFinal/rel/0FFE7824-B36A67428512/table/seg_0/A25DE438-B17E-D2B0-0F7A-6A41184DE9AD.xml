@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A25DE438-B17E-D2B0-0F7A-6A41184DE9AD" name="COMPETICION">
+<createdBy>anama</createdBy>
+<createdTime>2021-01-24 19:04:50 UTC</createdTime>
+<generatorID>C3956C58-38DE-6A18-8A7E-1939BB87AA38</generatorID>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Descripcion" id="3C29D2EE-6886-1D83-F5C1-1D5CF5EDD410">
+<createdBy>anama</createdBy>
+<createdTime>2021-01-28 13:33:27 UTC</createdTime>
+<generatorID>5DCDFFB8-2A5B-F172-0DE5-E6E81433D03F</generatorID>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64 CHAR</dataTypeSize>
+<ownDataTypeParameters>64 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Sede" id="212110C5-997F-BC08-CDD1-2A3F216B38E8">
+<createdBy>anama</createdBy>
+<createdTime>2021-01-24 19:04:50 UTC</createdTime>
+<generatorID>A8228D8C-3D14-AC05-F2CB-D3676369A3DE</generatorID>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha" id="B62F6A87-E961-5D0C-5463-EC0F72B4C3E1">
+<createdBy>anama</createdBy>
+<createdTime>2021-01-24 19:04:50 UTC</createdTime>
+<generatorID>134D4F48-F8EC-6C15-2733-8B759E62812D</generatorID>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="00BAF6C2-53A0-56E9-B0F7-351C750CA8B6" name="COMPETICION_PK">
+<createdBy>anama</createdBy>
+<createdTime>2021-01-24 19:04:50 UTC</createdTime>
+<generatorID>8621E550-E7AA-EF20-7D91-051E661B0587</generatorID>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3C29D2EE-6886-1D83-F5C1-1D5CF5EDD410"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

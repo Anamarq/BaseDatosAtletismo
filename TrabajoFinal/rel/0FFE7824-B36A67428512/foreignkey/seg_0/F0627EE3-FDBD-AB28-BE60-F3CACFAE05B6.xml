@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F0627EE3-FDBD-AB28-BE60-F3CACFAE05B6" containerWithKeyObject="BDA3ED60-FB2E-BCB1-CFA4-6B5DC9CD33CB" localFKIndex="16CBE22F-0476-DDE5-3081-BF259038991A" name="Tiene_PRUEBAS_FK">
+<createdBy>anama</createdBy>
+<createdTime>2021-02-06 14:38:15 UTC</createdTime>
+<generatorID>C461F6C0-5830-3336-5442-9D3EE86AD7B2</generatorID>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<referredTableLongName>PRUEBAS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>375BC93F-1368-8469-0213-9B18FDA54928</referredTableID>
+<keyObject>721A9F50-67E9-57C5-94D9-EDB22591EEDC</keyObject>
+<referredKeyID>721A9F50-67E9-57C5-94D9-EDB22591EEDC</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Hora</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

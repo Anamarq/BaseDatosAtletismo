@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\anama\Escritorio\FinalAnaM\EclipseFinalJava\.metadata\.plugins\org.eclipse.jdt.core
+3989105179.index
+565767664.index
+2154681375.index

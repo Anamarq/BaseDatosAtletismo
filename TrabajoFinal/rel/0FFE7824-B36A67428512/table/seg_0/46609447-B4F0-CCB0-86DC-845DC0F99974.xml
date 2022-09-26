@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="46609447-B4F0-CCB0-86DC-845DC0F99974" name="Participa">
+<createdBy>anama</createdBy>
+<createdTime>2021-01-24 19:04:50 UTC</createdTime>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ATLETAS_Licencia" id="8DF90DDB-8A95-C3B1-0670-C53DA2EFFCD4">
+<createdBy>anama</createdBy>
+<createdTime>2021-01-24 19:04:50 UTC</createdTime>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9D791535-A1FB-CD60-1707-57F241F4ECB4" referredColumn="EBC80154-4BF3-75CB-4422-251A145F849A"/>
+</associations>
+</Column>
+<Column name="PRUEBAS_Prueba" id="3CDDF899-521F-9B5F-4B5E-63D43D21465E">
+<createdBy>anama</createdBy>
+<createdTime>2021-02-06 15:46:23 UTC</createdTime>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C4B682AC-A720-3E20-6E8C-CBF9D0942B06" referredColumn="03692863-A63A-7F9E-C306-9DA3A8FFF7D8"/>
+</associations>
+</Column>
+<Column name="Resultado" id="78472C0F-7291-E047-1034-F06FC79DA515">
+<createdBy>anama</createdBy>
+<createdTime>2021-01-24 19:04:50 UTC</createdTime>
+<generatorID>BC53B449-E2BA-771B-1E34-1964F850E962</generatorID>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BEDC3FE7-6316-5CDD-91F1-3813E2089C36" name="Participa_PK">
+<createdBy>anama</createdBy>
+<createdTime>2021-01-24 19:04:50 UTC</createdTime>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8DF90DDB-8A95-C3B1-0670-C53DA2EFFCD4"/>
+<colUsage columnID="3CDDF899-521F-9B5F-4B5E-63D43D21465E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0774D94F-D59E-7233-8692-C9E7DF4553E6" name="Participa_ATLETAS_FK">
+<createdBy>anama</createdBy>
+<createdTime>2021-01-24 19:04:50 UTC</createdTime>
+<generatorID>52E1CC8E-1C70-4EF4-E40D-70DA2B2D3300</generatorID>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8DF90DDB-8A95-C3B1-0670-C53DA2EFFCD4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A3EE6C67-B2B1-B629-2E41-2E9C9CFECFA4" name="Participa_PRUEBAS_FK">
+<createdBy>anama</createdBy>
+<createdTime>2021-01-24 19:04:50 UTC</createdTime>
+<generatorID>52E1CC8E-1C70-4EF4-E40D-70DA2B2D3300</generatorID>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3CDDF899-521F-9B5F-4B5E-63D43D21465E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Compite" directorySegmentName="seg_0" id="72F6F51C-EC59-72EC-00D6-36D7F367E178">
+<createdBy>anama</createdBy>
+<createdTime>2021-02-05 23:21:26 UTC</createdTime>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<engineerTo>
+<item key="0FFE7824-9426-1525-CE0C-B36A67428512" value="true"/>
+</engineerTo>
+<sourcePk>8621E550-E7AA-EF20-7D91-051E661B0587</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>C3956C58-38DE-6A18-8A7E-1939BB87AA38</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2776782D-6C1B-B7EF-F023-0138C2C7C5B0</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

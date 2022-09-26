@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="77CF9473-054E-5088-A890-68568BB99C76" name="FEDERACIONES">
+<createdBy>anama</createdBy>
+<createdTime>2020-12-13 12:50:42 UTC</createdTime>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<engineerTo>
+<item key="0FFE7824-9426-1525-CE0C-B36A67428512" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Federacion" id="4EBD5ED5-D032-FFA9-AE21-8F25C3825BA4">
+<createdBy>anama</createdBy>
+<createdTime>2020-12-13 12:50:52 UTC</createdTime>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<engineerTo>
+<item key="0FFE7824-9426-1525-CE0C-B36A67428512" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefono" id="4F6BF5EA-F30E-35C0-8736-8A87CA9F1151">
+<createdBy>anama</createdBy>
+<createdTime>2020-12-13 12:51:11 UTC</createdTime>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<engineerTo>
+<item key="0FFE7824-9426-1525-CE0C-B36A67428512" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="web" id="3AF7BC5D-ECA9-E130-F2DB-39821D17B26A">
+<createdBy>anama</createdBy>
+<createdTime>2020-12-13 13:08:06 UTC</createdTime>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<engineerTo>
+<item key="0FFE7824-9426-1525-CE0C-B36A67428512" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Localización" id="3CFD64B5-BE94-D3D0-CEFB-204664E4F15B">
+<createdBy>anama</createdBy>
+<createdTime>2020-12-13 13:10:06 UTC</createdTime>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<engineerTo>
+<item key="0FFE7824-9426-1525-CE0C-B36A67428512" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="041BDF70-9F3B-AED8-B12D-4DB866A22D6A" name="CLUB PK">
+<createdBy>anama</createdBy>
+<createdTime>2020-12-13 13:23:14 UTC</createdTime>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="0FFE7824-9426-1525-CE0C-B36A67428512" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4EBD5ED5-D032-FFA9-AE21-8F25C3825BA4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

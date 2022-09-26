@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C4B682AC-A720-3E20-6E8C-CBF9D0942B06" containerWithKeyObject="46609447-B4F0-CCB0-86DC-845DC0F99974" localFKIndex="A3EE6C67-B2B1-B629-2E41-2E9C9CFECFA4" name="Participa_PRUEBAS_FK">
+<createdBy>anama</createdBy>
+<createdTime>2021-01-24 19:04:50 UTC</createdTime>
+<generatorID>52E1CC8E-1C70-4EF4-E40D-70DA2B2D3300</generatorID>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<referredTableLongName>PRUEBAS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>375BC93F-1368-8469-0213-9B18FDA54928</referredTableID>
+<keyObject>721A9F50-67E9-57C5-94D9-EDB22591EEDC</keyObject>
+<referredKeyID>721A9F50-67E9-57C5-94D9-EDB22591EEDC</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Hora,COMPETICION_Sede,COMPETICION_Fecha</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

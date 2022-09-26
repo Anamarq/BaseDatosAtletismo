@@ -1,0 +1,34 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Tiene" directorySegmentName="seg_0" id="C461F6C0-5830-3336-5442-9D3EE86AD7B2">
+<createdBy>anama</createdBy>
+<createdTime>2020-12-13 13:18:19 UTC</createdTime>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<engineerTo>
+<item key="0FFE7824-9426-1525-CE0C-B36A67428512" value="true"/>
+</engineerTo>
+<sourcePk>8621E550-E7AA-EF20-7D91-051E661B0587</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>C3956C58-38DE-6A18-8A7E-1939BB87AA38</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>36F91DE3-ACFC-2F53-C30F-7D12694F3DAE</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="Hora" id="E522F628-4DDC-B60D-69DF-BE365C497AE0">
+<createdBy>anama</createdBy>
+<createdTime>2021-02-07 11:50:43 UTC</createdTime>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<engineerTo>
+<item key="0FFE7824-9426-1525-CE0C-B36A67428512" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

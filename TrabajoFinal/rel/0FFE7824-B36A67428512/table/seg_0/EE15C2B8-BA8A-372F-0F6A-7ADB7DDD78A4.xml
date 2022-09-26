@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EE15C2B8-BA8A-372F-0F6A-7ADB7DDD78A4" name="ATLETAS">
+<createdBy>anama</createdBy>
+<createdTime>2021-01-24 19:04:50 UTC</createdTime>
+<generatorID>2776782D-6C1B-B7EF-F023-0138C2C7C5B0</generatorID>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Licencia" id="EBC80154-4BF3-75CB-4422-251A145F849A">
+<createdBy>anama</createdBy>
+<createdTime>2021-01-24 19:04:50 UTC</createdTime>
+<generatorID>2538D894-112D-DA55-36C6-938F56ED7920</generatorID>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="C8936AF9-A921-DFD8-8057-EB91D9E65377">
+<createdBy>anama</createdBy>
+<createdTime>2021-01-24 19:04:50 UTC</createdTime>
+<generatorID>BB6FA08E-3C63-3198-36E7-0928D627B043</generatorID>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Apellidos" id="56E9A953-32DE-A9F4-4DC0-226E612292A9">
+<createdBy>anama</createdBy>
+<createdTime>2021-01-24 19:04:50 UTC</createdTime>
+<generatorID>4A30B5B0-22DC-30D9-FB2B-F6E9DECCBFAD</generatorID>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Sexo" id="8083E41B-F420-B983-77B0-787579A20D50">
+<createdBy>anama</createdBy>
+<createdTime>2021-01-28 12:49:50 UTC</createdTime>
+<generatorID>A2BE7F46-372A-5528-C700-D9C67B1E1AB4</generatorID>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>956557E1-D0AA-3E78-F5DB-69DE5A594589</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FechaNacimiento" id="F2612B7A-1812-5695-5E08-5402E82F60AE">
+<createdBy>anama</createdBy>
+<createdTime>2021-01-24 19:04:50 UTC</createdTime>
+<generatorID>39B9E860-9641-DCA2-73A9-4A3A9E6FD80D</generatorID>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FEDERACIONES_Federacion" id="71F1923A-529F-BB70-C872-6F934066B300">
+<createdBy>anama</createdBy>
+<createdTime>2021-01-24 19:04:50 UTC</createdTime>
+<generatorID>8C95D385-C709-B7F8-A7FE-808FC246EFB3</generatorID>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FD906F94-6799-681E-E283-A44949E0CD44" referredColumn="5AE32AB9-5FB8-E96B-4104-55106CA5F5A4"/>
+</associations>
+</Column>
+<Column name="Ciudad" id="7DC16040-A0F5-5AA2-ECC0-A53B80FA333D">
+<createdBy>anama</createdBy>
+<createdTime>2021-01-24 19:04:50 UTC</createdTime>
+<generatorID>ADE77F10-4D6E-FB20-BD30-478BBFA78055</generatorID>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C08CB2E3-FBC6-17BB-51AF-D10F0A8E1B67" name="ATLETAS_PK">
+<createdBy>anama</createdBy>
+<createdTime>2021-01-24 19:04:50 UTC</createdTime>
+<generatorID>479E3294-EF35-575C-637C-83EC88251143</generatorID>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EBC80154-4BF3-75CB-4422-251A145F849A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="33C6E78D-B74F-EAFB-9ADA-91A3CE74ED9D" name="ATLETAS_FEDERACIONES_FK">
+<createdBy>anama</createdBy>
+<createdTime>2021-02-06 14:44:40 UTC</createdTime>
+<generatorID>E2D351EA-03E2-5B71-CBDC-5182AB7E11BA</generatorID>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="71F1923A-529F-BB70-C872-6F934066B300"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

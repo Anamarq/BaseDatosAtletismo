@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FD906F94-6799-681E-E283-A44949E0CD44" containerWithKeyObject="EE15C2B8-BA8A-372F-0F6A-7ADB7DDD78A4" localFKIndex="33C6E78D-B74F-EAFB-9ADA-91A3CE74ED9D" name="ATLETAS_FEDERACIONES_FK">
+<createdBy>anama</createdBy>
+<createdTime>2021-02-06 14:44:40 UTC</createdTime>
+<generatorID>E2D351EA-03E2-5B71-CBDC-5182AB7E11BA</generatorID>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<referredTableLongName>FEDERACIONES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F49BCBC2-AA15-3335-F025-E9E3498BAB34</referredTableID>
+<keyObject>26974C9B-EF90-58A2-3358-E56C095632C3</keyObject>
+<referredKeyID>26974C9B-EF90-58A2-3358-E56C095632C3</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>Federacion</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

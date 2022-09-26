@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F49BCBC2-AA15-3335-F025-E9E3498BAB34" name="FEDERACIONES">
+<createdBy>anama</createdBy>
+<createdTime>2021-01-24 19:04:50 UTC</createdTime>
+<generatorID>77CF9473-054E-5088-A890-68568BB99C76</generatorID>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Federacion" id="5AE32AB9-5FB8-E96B-4104-55106CA5F5A4">
+<createdBy>anama</createdBy>
+<createdTime>2021-01-24 19:04:50 UTC</createdTime>
+<generatorID>4EBD5ED5-D032-FFA9-AE21-8F25C3825BA4</generatorID>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefono" id="B40594F0-C2EB-8496-FB43-D8EE92B452DA">
+<createdBy>anama</createdBy>
+<createdTime>2021-01-24 19:04:50 UTC</createdTime>
+<generatorID>4F6BF5EA-F30E-35C0-8736-8A87CA9F1151</generatorID>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="web" id="F46590F4-551D-C55F-5FD5-40CBFAC2132B">
+<createdBy>anama</createdBy>
+<createdTime>2021-01-24 19:04:50 UTC</createdTime>
+<generatorID>3AF7BC5D-ECA9-E130-F2DB-39821D17B26A</generatorID>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Localización" id="C7C7265A-83DC-4E35-721A-25C7E30BABF0">
+<createdBy>anama</createdBy>
+<createdTime>2021-01-24 19:04:50 UTC</createdTime>
+<generatorID>3CFD64B5-BE94-D3D0-CEFB-204664E4F15B</generatorID>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="26974C9B-EF90-58A2-3358-E56C095632C3" name="FEDERACIONES_PK">
+<createdBy>anama</createdBy>
+<createdTime>2021-02-06 14:44:24 UTC</createdTime>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5AE32AB9-5FB8-E96B-4104-55106CA5F5A4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

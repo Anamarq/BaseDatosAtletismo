@@ -1,0 +1,320 @@
+package Clases;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+
+import java.sql.*;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import javax.swing.JTabbedPane;
+import java.awt.Window.Type;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
+import javax.swing.JTextField;
+import java.awt.Font;
+import java.awt.Image;
+import java.awt.Color;
+import javax.swing.JComboBox;
+import javax.swing.DefaultComboBoxModel;
+public class Inicio {
+
+	private JFrame frame;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Inicio window = new Inicio();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+	Connection conn=null;
+	private JTable table;
+	private JTextField sedeT;
+	private JTextField fechaT;
+	private String sede;
+	private String fecha;
+	private String descripcion;
+	private JTextField DescT;
+	private String consulta;
+	/**
+	 * Create the application.
+	 */
+	public Inicio() {
+		initialize();  ///Iniciar aplicacion
+		conn=conexion.Conector();
+		JOptionPane.showMessageDialog(null,"Conexión exitosa!");
+		
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.setResizable(false);
+		frame.setType(Type.UTILITY);
+		frame.setBounds(100, 100, 781, 500);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.TOP);
+		tabbedPane.setBounds(0, 0, 765, 430);
+		frame.getContentPane().add(tabbedPane);
+		
+		JPanel panel = new JPanel();
+		panel.setBackground(Color.WHITE);
+		tabbedPane.addTab("Inicio", null, panel, null);
+		panel.setLayout(null);
+		
+		JPanel panel_1 = new JPanel();
+		panel_1.setBackground(Color.WHITE);
+		tabbedPane.addTab("Lista Competiciones", null, panel_1, null);
+		
+		JPanel panel_2 = new JPanel();
+		panel_2.setBackground(Color.WHITE);
+		tabbedPane.addTab("Organizar", null, panel_2, null);
+		panel_2.setLayout(null);
+		
+		JPanel panel_3 = new JPanel();
+		panel_3.setBackground(Color.WHITE);
+		tabbedPane.addTab("Mejores Marcas", null, panel_3, null);
+		panel_3.setLayout(null);
+		
+		////////////////////////////////////////PANEL/////////////////////////////////////////////////
+		JLabel Titulo = new JLabel("BASE DE DATOS DE COMPETICIONES DE ATLETISMO");
+		Titulo.setForeground(Color.RED);
+		Titulo.setFont(new Font("Tahoma", Font.BOLD, 14));
+		Titulo.setBounds(153, 11, 413, 46);
+		panel.add(Titulo);
+		
+		JLabel Logo = new JLabel("");
+		Image img= new ImageIcon(this.getClass().getResource("/running-shoes.png")).getImage();   //////Imagen 
+		Logo.setIcon(new ImageIcon(img));  ////Imagen
+		Logo.setBounds(226, 151, 422, 191);
+		panel.add(Logo);
+		
+		JLabel lblNewLabel_5 = new JLabel("Para ver los datos de una competici\u00F3n en concreto (atletas, pruebas...), ir a la pesta\u00F1a \"Organizar\". O explora otras pesta\u00F1as.");
+		lblNewLabel_5.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		lblNewLabel_5.setBounds(24, 68, 700, 66);
+		panel.add(lblNewLabel_5);
+		
+		
+		////////////////////////////////////////PANEL_1/////////////////////////////////////////////////
+		
+		DefaultTableModel model;
+		model=new DefaultTableModel();   //Crear modelo tabla (Defecto)
+		table = new JTable(model);  //Crear Jtable
+		panel_1.add(table);   //Añadir a panel_1
+		JScrollPane scrollPane ;
+		scrollPane= new JScrollPane(table);///Scrollpane para ver nombre columnas
+		table.setFillsViewportHeight(true);
+		panel_1.add(scrollPane);  //Añadir a panel_1
+		
+		try {
+			//MOSTRAR TABLA EN PANEL_1
+			accion.mostrar( "select* from competicion",model);
+	
+		
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		////////////////////////////////////////PANEL_2/////////////////////////////////////////////////
+		
+		sedeT = new JTextField();
+		sedeT.setBounds(177, 60, 171, 28);
+		panel_2.add(sedeT);
+		sedeT.setColumns(10);
+		
+		fechaT = new JTextField();
+		fechaT.setBounds(177, 109, 171, 28);
+		panel_2.add(fechaT);
+		fechaT.setColumns(10);
+		
+		JLabel labelSede = new JLabel("SEDE");
+		labelSede.setFont(new Font("Tahoma", Font.BOLD, 11));
+		labelSede.setLabelFor(frame);
+		labelSede.setBounds(47, 67, 69, 21);
+		panel_2.add(labelSede);
+		
+		JLabel labelFecha = new JLabel("FECHA");
+		labelFecha.setFont(new Font("Tahoma", Font.BOLD, 11));
+		labelFecha.setBounds(47, 113, 69, 21);
+		panel_2.add(labelFecha);
+		
+		JButton btnNewButton = new JButton("Datos");
+		//Si se pulsa el botón:
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				 sede= sedeT.getText();
+				 fecha=fechaT.getText();
+				//frame.dispose(); //esconde el frame
+				 //TODO
+				Frame2 f2=new Frame2();  //Crea frame2
+				f2.setVisible(true); //Si es true se hace visible
+			}
+		});
+		btnNewButton.setBounds(495, 80, 109, 47);
+		panel_2.add(btnNewButton);
+		
+		JButton btnNewButton_1 = new JButton("Nueva");
+		btnNewButton_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				sede= sedeT.getText();
+				fecha=fechaT.getText();
+				descripcion= DescT.getText();
+				consulta= "Insert into COMPETICION(SEDE,FECHA,DESCRIPCION) values('"+sede+"', to_date('"+fecha+"','DD/MM/RR'), '"+descripcion+"')";
+				
+				try {
+					//MOSTRAR TABLA EN PANEL_1
+					accion.update(consulta);
+					accion.mostrar( "select * from competicion where sede='"+sede+"' and fecha='"+fecha+"'",model);  //PAra actualizar
+				
+				}catch(SQLException e1) {
+					e1.printStackTrace();
+				}
+				
+			}
+		});
+		btnNewButton_1.setBounds(47, 271, 109, 47);
+		panel_2.add(btnNewButton_1);
+		
+		JButton btnNewButton_2 = new JButton("Borrar");
+		btnNewButton_2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				sede= sedeT.getText();
+				fecha=fechaT.getText();
+				consulta= "delete competicion where sede='"+sede+"' and fecha='"+fecha+"'";
+				
+				try {
+					//MOSTRAR TABLA EN PANEL_1
+					accion.update(consulta);  //No se actualiza :(
+					//model.fireTableDataChanged();
+				}catch(SQLException e1) {
+					e1.printStackTrace();
+				}
+			}
+		});
+		btnNewButton_2.setBounds(495, 170, 109, 47);
+		panel_2.add(btnNewButton_2);
+		
+		JButton btnNewButton_3 = new JButton("Filtrar");
+		btnNewButton_3.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				sede= sedeT.getText();
+				fecha=fechaT.getText();
+				try {
+					FrameTablas ft;
+					 ft=new FrameTablas("select* from competicion where sede= '"+sede+"'");  //Crear frame nuevo para tabla, solo filtrar por sede
+					 ft.setVisible(true); //Si es true se hace visible
+				} catch (Exception e1) {
+					e1.printStackTrace();
+				}
+				
+			}
+		});
+		btnNewButton_3.setBounds(534, 323, 109, 48);
+		panel_2.add(btnNewButton_3);
+		
+		JLabel lblNewLabel = new JLabel("Introduzca los datos de la competici\u00F3n. \r\n");
+		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 13));
+		lblNewLabel.setBounds(44, 9, 290, 34);
+		panel_2.add(lblNewLabel);
+		
+		JLabel lblNewLabel_2 = new JLabel("Datos: Busca y muestra los datos de la competici\u00F3n \r\n");
+		lblNewLabel_2.setBounds(423, 29, 260, 40);
+		panel_2.add(lblNewLabel_2);
+		
+		JLabel lblNewLabel_3 = new JLabel("Nueva: Introduce una nueva competici\u00F3n\r\n");
+		lblNewLabel_3.setBounds(35, 203, 243, 14);
+		panel_2.add(lblNewLabel_3);
+		
+		JLabel lblNewLabel_4 = new JLabel("Borrar: borra una competici\u00F3n");
+		lblNewLabel_4.setBounds(423, 149, 212, 14);
+		panel_2.add(lblNewLabel_4);
+		
+		JLabel lblDescripcionsoloSi = new JLabel("DESCRIPCION: (solo si se quiere introducir nueva)");
+		lblDescripcionsoloSi.setFont(new Font("Tahoma", Font.BOLD, 11));
+		lblDescripcionsoloSi.setBounds(34, 239, 283, 21);
+		panel_2.add(lblDescripcionsoloSi);
+		
+		DescT = new JTextField();
+		DescT.setColumns(10);
+		DescT.setBounds(335, 239, 231, 21);
+		panel_2.add(DescT);
+		
+		////////////////////////////////////////PANEL_3/////////////////////////////////////////////////
+		
+		JComboBox comboBoxS = new JComboBox();
+		comboBoxS.setModel(new DefaultComboBoxModel(new String[] {"Masculino", "Femenino"}));
+		comboBoxS.setToolTipText("");
+		comboBoxS.setBounds(366, 205, 110, 22);
+		panel_3.add(comboBoxS);
+		
+		JComboBox comboBoxT = new JComboBox();
+		comboBoxT.setModel(new DefaultComboBoxModel(new String[] {"Velocidad", "Saltos", "Lanzamientos"}));
+		comboBoxT.setToolTipText("");
+		comboBoxT.setBounds(219, 205, 110, 22);
+		panel_3.add(comboBoxT);
+		
+		JComboBox comboBoxP = new JComboBox();
+		comboBoxP.setModel(new DefaultComboBoxModel(new String[] {"100ml", "400ml", "1500ml", "100/110m vallas", "Longitud", "Triple", "P\u00E9rtiga", "Altura", "Jabalina", "Peso", "Martillo", "Disco"}));
+		comboBoxP.setToolTipText("");
+		comboBoxP.setBounds(90, 205, 86, 22);
+		panel_3.add(comboBoxP);
+		
+		JLabel lblNewLabel_1 = new JLabel("Introduzca pruba para ver las mejores marcas de todas las competiciones :");
+		lblNewLabel_1.setFont(new Font("Tahoma", Font.BOLD, 14));
+		lblNewLabel_1.setBounds(61, 32, 549, 41);
+		panel_3.add(lblNewLabel_1);
+		
+		JButton btnNewButton_4 = new JButton("Buscar");
+		btnNewButton_4.setBounds(510, 196, 100, 41);
+		panel_3.add(btnNewButton_4);
+		
+		JLabel lblNewLabel_6 = new JLabel("Prueba:");
+		lblNewLabel_6.setFont(new Font("Tahoma", Font.BOLD, 14));
+		lblNewLabel_6.setBounds(90, 151, 86, 17);
+		panel_3.add(lblNewLabel_6);
+		
+		JLabel lblNewLabel_6_1 = new JLabel("Tipo:");
+		lblNewLabel_6_1.setFont(new Font("Tahoma", Font.BOLD, 14));
+		lblNewLabel_6_1.setBounds(228, 154, 86, 17);
+		panel_3.add(lblNewLabel_6_1);
+		
+		JLabel lblNewLabel_6_1_1 = new JLabel("Sexo:");
+		lblNewLabel_6_1_1.setFont(new Font("Tahoma", Font.BOLD, 14));
+		lblNewLabel_6_1_1.setBounds(369, 165, 86, 17);
+		panel_3.add(lblNewLabel_6_1_1);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}
+
+
+/*//frame.dispose(); //esconde el frame
+				InfoCompeticiones ic=new InfoCompeticiones();
+				ic.setVisible(true); //Si es true se hace visible*/

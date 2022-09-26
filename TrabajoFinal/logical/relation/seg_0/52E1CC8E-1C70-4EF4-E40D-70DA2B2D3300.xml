@@ -1,0 +1,35 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Participa" directorySegmentName="seg_0" id="52E1CC8E-1C70-4EF4-E40D-70DA2B2D3300">
+<createdBy>anama</createdBy>
+<createdTime>2020-12-13 13:16:59 UTC</createdTime>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<engineerTo>
+<item key="0FFE7824-9426-1525-CE0C-B36A67428512" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>2776782D-6C1B-B7EF-F023-0138C2C7C5B0</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>36F91DE3-ACFC-2F53-C30F-7D12694F3DAE</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="Resultado" id="BC53B449-E2BA-771B-1E34-1964F850E962">
+<createdBy>anama</createdBy>
+<createdTime>2020-12-30 16:04:09 UTC</createdTime>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<engineerTo>
+<item key="0FFE7824-9426-1525-CE0C-B36A67428512" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

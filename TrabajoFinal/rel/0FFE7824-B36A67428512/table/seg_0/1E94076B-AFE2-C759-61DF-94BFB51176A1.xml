@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1E94076B-AFE2-C759-61DF-94BFB51176A1" name="FotoAtleta">
+<createdBy>anama</createdBy>
+<createdTime>2021-01-30 20:25:04 UTC</createdTime>
+<generatorID>1026B2A3-5853-327B-6522-53B134EB468F</generatorID>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Foto" id="0AE39913-B343-1611-FEA7-E19CD01A0133">
+<createdBy>anama</createdBy>
+<createdTime>2021-01-30 20:25:04 UTC</createdTime>
+<generatorID>22EC7472-3F94-9162-011D-E38116B9F7D3</generatorID>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="433C19FD-DBA9-1593-ABCD-826BCAE0C9A5">
+<createdBy>anama</createdBy>
+<createdTime>2021-01-30 20:25:04 UTC</createdTime>
+<generatorID>27319DA3-DEC6-9390-68B8-E074CD629712</generatorID>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ATLETAS_Licencia" id="47E7DA0A-1FD1-BFC7-41F5-6D1A211F14B5">
+<createdBy>anama</createdBy>
+<createdTime>2021-02-03 12:56:18 UTC</createdTime>
+<generatorID>5F0B2C04-D3BF-AA25-512A-C172838F6C61</generatorID>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="57617407-E782-4BAF-FB1D-085858E14396" referredColumn="EBC80154-4BF3-75CB-4422-251A145F849A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="29762489-C462-D084-8DD8-B3C56930F838" name="FotoAtleta_PK">
+<createdBy>anama</createdBy>
+<createdTime>2021-01-30 20:25:04 UTC</createdTime>
+<generatorID>D0B27F3C-A3DB-2F46-29DA-D4ACA00F5CE3</generatorID>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="47E7DA0A-1FD1-BFC7-41F5-6D1A211F14B5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="81F47D64-8B16-7C60-5F29-8B5C1CE83E96" name="FotoAtleta__IDX">
+<createdBy>anama</createdBy>
+<createdTime>2021-02-03 12:56:18 UTC</createdTime>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>49D42BFA-AE67-D8D0-2B58-9B65EF0562B9</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="47E7DA0A-1FD1-BFC7-41F5-6D1A211F14B5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="847D568F-AE53-1B53-8CE5-ACB22522E17C" name="FotoAtleta_ATLETAS_FK">
+<createdBy>anama</createdBy>
+<createdTime>2021-02-03 12:56:18 UTC</createdTime>
+<generatorID>49D42BFA-AE67-D8D0-2B58-9B65EF0562B9</generatorID>
+<ownerDesignName>TrabajoFinal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="47E7DA0A-1FD1-BFC7-41F5-6D1A211F14B5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
